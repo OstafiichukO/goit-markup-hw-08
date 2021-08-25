@@ -1,0 +1,9 @@
+@mixin sectionMixin($t, $b) {
+  padding-top: $t;
+  padding-bottom: $b
+}
+@mixin centeredFlex($display, $jc, $ai) {
+  display: $display;
+  justify-content: $jc;
+  align-items: $ai;
+}

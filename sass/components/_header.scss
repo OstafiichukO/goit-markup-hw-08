@@ -1,0 +1,104 @@
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: #ececec 1px solid;
+}
+.head {
+  @include centeredFlex(flex, null, center);
+}
+.logo,
+.menu__link,
+.auth__contacts {
+  display: flex;
+}
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #000000;
+  &__web {
+    color: var(--accent-color);
+  }
+}
+.menu {
+  margin-left: 93px;
+  &__link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &--current {
+      color: var(--accent-color);
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1.2px;
+        width: 100%;
+        border-bottom: 4px solid var(--accent-color);
+        border-radius: 2px;
+      }
+    }
+  }
+}
+.menu-list {
+  display: flex;
+  &__item {
+    position: relative;
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+  }
+}
+
+.auth-list {
+  display: flex;
+  margin-left: auto;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  &__item {
+    margin-left: 30px;
+  }
+}
+.auth__contacts {
+  align-items: center;
+  /* justify-content: center; */
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &:hover .icon-envelope,
+  &:focus .icon-envelope,
+  &:hover .icon-smartphone,
+  &:focus .icon-smartphone {
+    fill: var(--accent-color);
+}
+}
+.icon-envelope {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-smartphone {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

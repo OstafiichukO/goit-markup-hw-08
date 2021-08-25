@@ -1,0 +1,27 @@
+.client-list {
+  &__item {
+    width: 170px;
+    height: 92px;
+  }
+  &__link {
+    @include centeredFlex(flex, center, center);
+    width: inherit;
+    height: inherit;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+  }
+  }
+  &__icon {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}

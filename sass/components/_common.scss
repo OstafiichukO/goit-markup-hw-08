@@ -1,0 +1,54 @@
+.body {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.features-list,
+.work-list,
+.team-list,
+.client-list,
+.social-list,
+.fSocials-list {
+  @include centeredFlex(flex, space-between, null);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.work-title,
+.team-title,
+.client-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.input:focus,
+.input:hover {
+  border-color: var(--accent-color);
+}

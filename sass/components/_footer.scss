@@ -1,0 +1,113 @@
+.footer {
+  background-color: var(--accent-bgc);
+  color: var(--title-text-color);
+  padding: 60px 0;
+  &-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+.fAuth-logo {
+  display: inline-block;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  &__web {
+    color: var(--accent-color);
+  }
+}
+.fAuth-list {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  &__item:nth-child(-n + 2) {
+    margin-bottom: 5px;
+  }
+  &__location {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  &__contacts {
+    text-decoration: none;
+    color: var(--footer-contacts-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+.fSocials {
+  width: 206px;
+  &-list {
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        background-color: var(--accent-color);
+      }
+    }
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus {
+        background-color: var(--accent-color);
+      }
+    }
+    &__icon {
+      fill: var(--title-text-color);
+    }
+  }
+}
+.fMailing-form {
+  display: flex;
+  flex-direction: row;
+  &__input {
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    background-color: var(--accent-bgc);
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon {
+    margin-left: 10px;
+  }
+}

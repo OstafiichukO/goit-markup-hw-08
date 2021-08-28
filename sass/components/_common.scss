@@ -19,12 +19,17 @@ p {
 // .features-list,
 // .work-list,
 // .team-list,
-// .client-list,
-// .fSocials-list {
-//   @include centeredFlex(flex, space-between, null);
-// }
-.social-list {
+//
+.fSocials-list {
   @include centeredFlex(flex, space-between, null);
+}
+.social-list {
+  @include centeredFlex(flex, center, null);
+  margin-bottom: 24px;
+}
+.client-list {
+  @include centeredFlex(flex, null, null);
+  flex-wrap: wrap;
 }
 .visually-hidden {
   position: absolute;
@@ -39,16 +44,21 @@ p {
   overflow: hidden;
 }
 .title {
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  // margin-top: 0px;
+  // margin-bottom: 50px;
 }
 .work-title,
 .team-title,
 .client-title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 .input:focus,
 .input:hover {

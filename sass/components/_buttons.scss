@@ -80,8 +80,8 @@
   }
   &-menu {
     @include centeredFlex(inline-flex, center, center);
-    width: 40px;
-    height: 40px;
+    // width: 40px;
+    // height: 40px;
     padding: 0;
     margin: 0;
     background-color: transparent;
@@ -93,6 +93,9 @@
       fill: var(--accent-color);
     }
     @media screen and(min-width: 768px) {
+      display: none;
+    }
+    & .icon-cross {
       display: none;
     }
   }

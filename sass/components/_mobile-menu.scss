@@ -6,7 +6,7 @@
   height: 100vh;
   padding: 32px;
   background-color: #3f51b5;
-  z-index: 999;
+  // z-index: 999;
   transform: translateX(100%);
 }
 .menu-container.is-open {
@@ -18,7 +18,7 @@
   background-color: yellowgreen;
 }
 .mobile-list {
-  @include centerdFlex(flex, center, center);
+  @include centeredFlex(flex, center, center);
 
   &__item {
     border: 5 px solid #757575;

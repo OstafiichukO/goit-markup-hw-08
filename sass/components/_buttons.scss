@@ -87,14 +87,24 @@
     height: 40px;
     padding: 0;
     border: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+    @media screen and(min-width: 768px) {
+      display: none;
+    }
   }
 }
 .buttons-list {
-  @include centeredFlex(flex, center, null);
+  @include centeredFlex(flex, flex-start, null);
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 .buttons-list__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 .btn-field {
   display: flex;

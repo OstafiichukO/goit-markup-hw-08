@@ -16,6 +16,15 @@
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 1 * 30px) / 2);
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
 }
 .team-details {
   // padding: 30px 32px;

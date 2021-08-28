@@ -16,12 +16,14 @@ p {
   padding: 0;
   margin: 0;
 }
-.features-list,
-.work-list,
-.team-list,
-.client-list,
-.social-list,
-.fSocials-list {
+// .features-list,
+// .work-list,
+// .team-list,
+// .client-list,
+// .fSocials-list {
+//   @include centeredFlex(flex, space-between, null);
+// }
+.social-list {
   @include centeredFlex(flex, space-between, null);
 }
 .visually-hidden {

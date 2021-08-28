@@ -12,17 +12,21 @@
     margin-top: 0px;
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 24px;
+    line-height: 1.61;
     text-transform: uppercase;
     color: var(--title-text-color);
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }
 .overlay {
-  max-width: 1600px;
+  // max-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   background-image: linear-gradient(
       90deg,
       rgba(47, 48, 58, 0.4) 0%,

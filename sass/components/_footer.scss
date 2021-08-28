@@ -1,9 +1,9 @@
 .footer {
   background-color: var(--accent-bgc);
   color: var(--title-text-color);
-  padding: 60px 0;
+  // padding: 60px 0;
   &-group {
-    display: flex;
+    // display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
@@ -18,7 +18,7 @@
   }
 }
 .fAuth-logo {
-  display: inline-block;
+  // display: inline-block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -32,7 +32,7 @@
   }
 }
 .fAuth-list {
-  display: flex;
+  // display: flex;
   flex-direction: column;
   font-style: normal;
   font-size: 14px;
@@ -58,10 +58,10 @@
   }
 }
 .fSocials {
-  width: 206px;
+  // width: 206px;
   &-list {
     &__item {
-      display: flex;
+      // display: flex;
       justify-content: center;
       align-items: center;
       width: 44px;

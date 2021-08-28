@@ -1,6 +1,10 @@
 .features {
   &-list__item {
-    width: 270px;
+    margin-bottom: 30px;
+    // width: 270px;
+    // @media screen (min-width: 1200px) {
+    //   width: 270px:
+    // }
   }
   &__icons {
     @include centeredFlex(flex, center, center);
@@ -13,9 +17,11 @@
     height: 70px;
   }
   &__title {
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -24,9 +30,8 @@
   &__text {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    margin-top: 0px;
-    margin-bottom: 0px;
     color: var(--secondary-text-color);
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
   }
 }

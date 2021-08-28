@@ -7,6 +7,8 @@
 }
 .head {
   @include centeredFlex(flex, space-between, center);
+  width: 100%;
+  background-color: aqua;
 }
 .logo,
 .menu__link,

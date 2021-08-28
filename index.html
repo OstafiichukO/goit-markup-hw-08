@@ -20,43 +20,46 @@
 <body class="body">
     <!--Site navigation-->
     <header class="header">
-        <div class="container head">
-            <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
-            <!-- кнопка відкриття меню -->
-            <button class="btn-menu js-open-menu is-open" aria-expanded="false" aria-controls="menu-container">
-                <svg class="icon-menu" width="24" height="16">
-                    <use href="./images/icons.svg#menu_24px"></use>
-                </svg>
-            </button>
-            <div class="menu-container js-menu-container" id="menu-container">
-                <button class="btn-menu js-close-menu">
-                    <svg class="icon-close" width="19" height="19">
-                        <use href="./images/icons.svg#close"></use>
+        <div class="container">
+            <div class="head">
+                <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
+                <!-- кнопка відкриття меню -->
+                <button type="button" class="btn-menu js-open-menu is-open" aria-expanded="false" aria-controls="menu-container">
+                    <svg class="icon-menu" width="40" height="40">
+                        <use href="./images/icons.svg#menu"></use>
+                        <use href="./images/icons.svg#icon-cross"></use>
                     </svg>
                 </button>
-                <div class="test"></div>
-            </div>
-            <!-- для планшета початок -->
-            <nav class="menu">
-                <ul class="menu-list list">
-                    <li class="menu-list__item"><a href="./index.html" class="menu__link menu__link--current">Студия</a></li>
-                    <li class="menu-list__item"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
-                    <li class="menu-list__item"><a href="" class="menu__link">Контакты</a></li>
+                <div class="menu-container js-menu-container" id="menu-container">
+                    <!-- <button class="btn-menu js-close-menu">
+                        <svg class="icon-close" width="19" height="19">
+                            <use href="./images/icons.svg#close"></use>
+                        </svg>
+                    </button> -->
+                    <div class="test"></div>
+                </div>
+                <!-- для планшета початок -->
+                <nav class="menu">
+                    <ul class="menu-list list">
+                        <li class="menu-list__item"><a href="./index.html" class="menu__link menu__link--current">Студия</a></li>
+                        <li class="menu-list__item"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
+                        <li class="menu-list__item"><a href="" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="auth-list list">
+                    <li><a href="mailto:info@devstudio.com" class="auth__contacts">
+                            <svg class="icon-envelope" width="16" height="12">
+                                <use href="./images/icons.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    <li class="auth-list__item"><a href="tel:+380961111111" class="auth__contacts">
+                            <svg class="icon-smartphone" width="10" height="16">
+                                <use href="./images/icons.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul class="auth-list list">
-                <li><a href="mailto:info@devstudio.com" class="auth__contacts">
-                        <svg class="icon-envelope" width="16" height="12">
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li class="auth-list__item"><a href="tel:+380961111111" class="auth__contacts">
-                        <svg class="icon-smartphone" width="10" height="16">
-                            <use href="./images/icons.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
-            </ul>
-            <!-- для планшета кынець -->
+                <!-- для планшета кынець -->
+            </div>
         </div>
     </header>
     <main>
@@ -422,15 +425,15 @@
             </div>
         </div>
     </footer>
-    <!-- меню початок -->
+    
     <!-- <div class="menu-container js-menu-container backdrop" id="mobile-menu">
         <button class="btn-menu js-close-menu">
             <svg class="icon-close" width="19" height="19">
                 <use href="./images/icons.svg#close"></use>
             </svg>
         </button>
-        <div class="test"></div> -->
-        <!-- <nav class="menu">
+        <div class="test"></div>
+        <nav class="menu">
             <ul class="menu-list list">
                 <li class="menu-list__item"><a href="./index.html" class="menu__link menu__link--current">Студия</a></li>
                 <li class="menu-list__item"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
@@ -449,31 +452,23 @@
                     </svg>
                     +38 096 111 11 11</a></li>
         </ul>
-        <ul class="mobile-list list">
-            <li class="mobile-list__item">
-                <a href="#" aria-label="instagram" class="mobile-list__link">Instagram</a>
-            </li>
-            <li class="mobile-list__item">
-                <a href="#" aria-label="instagram" class="mobile-list__link">Twitter</a>
-            </li>
-            <li class="mobile-list__item">
-                <a href="#" aria-label="instagram" class="mobile-list__link">Facebook</a>
-            </li>
-            <li class="mobile-list__item">
-                <a href="#" aria-label="instagram" class="mobile-list__link">Linkedin</a>
-            </li>
-        </ul> -->
-    <!-- </div> -->
-    <!-- меню кінець -->
-    <!-- menu-modal
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="btn-menu-close menu-toggle js-close-menu">
-            <svg class="icon-close" width="19" height="19">
-                <use href="./images/icons.svg#close"></use>
-            </svg>
-        </button>
-        <ul class="mobile-menu list"></ul>
     </div> -->
+
+    <!-- <ul class="mobile-list list">
+        <li class="mobile-list__item">
+            <a href="#" aria-label="instagram" class="mobile-list__link">Instagram</a>
+        </li>
+        <li class="mobile-list__item">
+            <a href="#" aria-label="instagram" class="mobile-list__link">Twitter</a>
+        </li>
+        <li class="mobile-list__item">
+            <a href="#" aria-label="instagram" class="mobile-list__link">Facebook</a>
+        </li>
+        <li class="mobile-list__item">
+            <a href="#" aria-label="instagram" class="mobile-list__link">Linkedin</a>
+        </li>
+    </ul> -->
+
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">

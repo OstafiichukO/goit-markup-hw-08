@@ -78,9 +78,8 @@
     border-radius: 4px;
     cursor: pointer;
   }
-  &-menu,
-  &-menu-close {
-    @include centeredFlex(flex, center, center);
+  &-menu {
+    @include centeredFlex(inline-flex, center, center);
     width: 40px;
     height: 40px;
     padding: 0;

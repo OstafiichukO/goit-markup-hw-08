@@ -79,23 +79,6 @@
     border-radius: 4px;
     cursor: pointer;
   }
-  &-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border: none;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      fill: var(--accent-color);
-    }
-    @media screen and(min-width: 768px) {
-      display: none;
-    }
-  }
 }
 .buttons-list {
   @include centeredFlex(flex, flex-start, null);
@@ -109,4 +92,22 @@
 .btn-field {
   display: flex;
   justify-content: center;
+}
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
 }

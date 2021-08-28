@@ -1,9 +1,12 @@
 .features {
   &-list__item {
     margin-bottom: 30px;
-    &:nth-child(2n + 1) {
-      margin-right: 30px;
+    @media screen and(min-width: 768px) {
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
     }
+
     @media screen and (min-width: 768px) {
       width: calc((100% - 1 * 30px) / 2);
     }

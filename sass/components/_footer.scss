@@ -112,10 +112,10 @@
     }
   }
 }
-.fMailing {
-  // @include centeredFlex(block, null, center);
-  // flex-direction: column;
-}
+// .fMailing {
+//   // @include centeredFlex(block, null, center);
+//   // flex-direction: column;
+// }
 .fMailing-form {
   @include centeredFlex(block, center, center);
   flex-direction: column;

@@ -25,29 +25,11 @@ font-family: 'Roboto', sans-serif;
 }
 
 .container {
-  min-width: 480px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 767px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
 }
 
 .body {
@@ -144,22 +126,15 @@ p {
 }
 
 .logo {
-  padding: 10px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 26px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #000000;
-}
-
-@media screen and (min-width: 1200px) {
-  .logo {
-    padding: 0;
-    font-size: 26px;
-    line-height: 1.2;
-  }
 }
 
 .logo__web {
@@ -196,12 +171,6 @@ p {
   border-radius: 2px;
 }
 
-@media screen and (max-width: 1199px) {
-  .menu {
-    display: none;
-  }
-}
-
 .menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,12 +198,6 @@ p {
 
 .auth-list__item {
   margin-left: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .auth-list {
-    display: none;
-  }
 }
 
 .auth__contacts {
@@ -449,7 +412,6 @@ p {
   visibility: visible;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
 }
 
 .is-hidden {

@@ -305,6 +305,12 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -359,7 +365,6 @@ p {
 }
 
 .btn:hover, .btn:focus {
-  background-color: var(--accent-color);
   color: var(--title-text-color);
 }
 
@@ -454,7 +459,7 @@ p {
   cursor: pointer;
 }
 
-.btn-menu {
+.btn-menu, .btn-menu-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,12 +478,12 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-menu:hover, .btn-menu:focus {
+.btn-menu:hover, .btn-menu:focus, .btn-menu-close:hover, .btn-menu-close:focus {
   fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
-  .btn-menu {
+  .btn-menu, .btn-menu-close {
     display: none;
   }
 }

@@ -97,15 +97,15 @@
     }
   }
 }
-.btn-menu .icon-cross {
-  display: none;
-}
-.btn-menu.is-open .icon-cross {
-  display: block;
-}
-.btn-menu.is-open .icon-menu {
-  display: none;
-}
+// .btn-menu .icon-cross {
+//   display: none;
+// }
+// .btn-menu.is-open .icon-cross {
+//   display: block;
+// }
+// .btn-menu.is-open .icon-menu {
+//   display: none;
+// }
 .buttons-list {
   @include centeredFlex(flex, flex-start, null);
   flex-wrap: wrap;

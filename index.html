@@ -24,41 +24,37 @@
             <div class="head">
                 <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
                 <!-- кнопка відкриття меню -->
-                <button type="button" class="btn-menu js-open-menu is-open" aria-expanded="false" aria-controls="menu-container">
-                    <svg class="icon-menu" width="40" height="40" aria-label="Переключатель мобильного меню">
-                        <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+                <button type="button" class="btn-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                         <use class="icon-menu" href="./images/icons.svg#menu"></use>
                     </svg>
                 </button>
-                <div class="menu-container js-menu-container" id="menu-container">
-                    <!-- <button class="btn-menu js-close-menu">
-                        <svg class="icon-close" width="19" height="19">
-                            <use href="./images/icons.svg#close"></use>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button type="button" class="btn-menu menu-toggle js-close-menu" aria-controls="mobile-menu">
+                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
                         </svg>
-                    </button> -->
-                    <div class="test"></div>
-                </div>
-                <!-- для планшета початок -->
-                <nav class="menu">
-                    <ul class="menu-list list">
-                        <li class="menu-list__item"><a href="./index.html" class="menu__link menu__link--current">Студия</a></li>
-                        <li class="menu-list__item"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
-                        <li class="menu-list__item"><a href="" class="menu__link">Контакты</a></li>
+                    </button>
+                    <nav class="menu">
+                        <ul class="menu-list list">
+                            <li class="menu-list__item"><a href="./index.html" class="menu__link menu__link--current">Студия</a></li>
+                            <li class="menu-list__item"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
+                            <li class="menu-list__item"><a href="" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="auth-list list">
+                        <li><a href="mailto:info@devstudio.com" class="auth__contacts">
+                                <svg class="icon-envelope" width="16" height="12">
+                                    <use href="./images/icons.svg#envelope"></use>
+                                </svg>
+                                info@devstudio.com</a></li>
+                        <li class="auth-list__item"><a href="tel:+380961111111" class="auth__contacts">
+                                <svg class="icon-smartphone" width="10" height="16">
+                                    <use href="./images/icons.svg#smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11</a></li>
                     </ul>
-                </nav>
-                <ul class="auth-list list">
-                    <li><a href="mailto:info@devstudio.com" class="auth__contacts">
-                            <svg class="icon-envelope" width="16" height="12">
-                                <use href="./images/icons.svg#envelope"></use>
-                            </svg>
-                            info@devstudio.com</a></li>
-                    <li class="auth-list__item"><a href="tel:+380961111111" class="auth__contacts">
-                            <svg class="icon-smartphone" width="10" height="16">
-                                <use href="./images/icons.svg#smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11</a></li>
-                </ul>
-                <!-- для планшета кынець -->
+                </div>
             </div>
         </div>
     </header>

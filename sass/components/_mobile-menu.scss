@@ -14,7 +14,7 @@
   justify-content: space-between;
   padding: 32px 40px;
   background-color: #fff;
-  // z-index: 999;
+  z-index: 999;
   transform: translateX(100%);
 }
 .menu-container.is-open {
@@ -22,6 +22,7 @@
 }
 .mobile-list {
   @include centeredFlex(flex, null, null);
+  flex-wrap: wrap;
   margin-bottom: 16px;
 
   &__item {

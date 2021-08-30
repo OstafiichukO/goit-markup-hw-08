@@ -304,6 +304,7 @@ p {
           justify-content: space-between;
   padding: 32px 40px;
   background-color: #fff;
+  z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
@@ -317,6 +318,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 16px;
 }
 
@@ -518,6 +521,12 @@ p {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 358px) {
+  .auth__contacts--tel {
+    font-size: 26px;
+  }
 }
 
 .auth__contacts--mail {

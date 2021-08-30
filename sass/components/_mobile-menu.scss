@@ -21,20 +21,26 @@
   transform: translateX(0);
 }
 .mobile-list {
-  @include centeredFlex(flex, center, center);
+  @include centeredFlex(flex, null, null);
+  margin-bottom: 16px;
 
   &__item {
-    border: 5 px solid #757575;
-  }
-
-  &__link {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding: 0 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__link {
     color: #2196f3;
     text-decoration: none;
-    padding: 0 20px;
-    border-right: 1px solid #757575;
   }
 
   @media screen and(min-width: 768px) {

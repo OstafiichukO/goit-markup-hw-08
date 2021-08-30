@@ -92,6 +92,7 @@
 .auth-list {
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: 48px;
   // display: none;
   // margin-left: auto;
   font-style: normal;
@@ -111,9 +112,19 @@
   /* justify-content: center; */
   color: var(--secondary-text-color);
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 16px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &--tel {
+    font-size: 32px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+  &--mail {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -132,11 +143,17 @@
   margin-right: 8px;
   fill: var(--secondary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
 }
 .icon-smartphone {
   margin-right: 8px;
   fill: var(--secondary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
 }
 .menu-container {
   display: flex;

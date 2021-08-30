@@ -2,6 +2,7 @@
   &:hover,
   &:focus {
     color: var(--title-text-color);
+    background-color: var(--accent-color);
   }
   &-primary {
     padding: 10px 32px;
@@ -118,4 +119,15 @@
 .btn-field {
   display: flex;
   justify-content: center;
+}
+@media screen and(min-width: 320px) {
+  .buttons-list {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and(min-width: 768px) {
+  .buttons-list {
+    @include centeredFlex(null, center, null);
+  }
 }

@@ -1,6 +1,9 @@
 .projects-list {
   display: block;
-  // flex-wrap: wrap;
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   &__link {
     display: block;
     text-decoration: none;
@@ -18,11 +21,17 @@
   &__item {
     // margin-right: 30px;
     margin-bottom: 30px;
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-    &:nth-child(n + 7) {
-      margin-bottom: 0;
+    // &:nth-child(3n) {
+    //   margin-right: 0;
+    // }
+    // &:nth-child(n + 7) {
+    //   margin-bottom: 0;
+    // }
+    @media screen and(min-width:768px) {
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+      width: calc(50% - 1 * 30px / 2);
     }
   }
 }
@@ -32,6 +41,9 @@
   border-left: 1px solid #eee;
   border-bottom: 1px solid #eee;
   border-right: 1px solid #eee;
+  // @media screen and (min-width: 768px) {
+  //   height: ;
+  // }
   &__name {
     margin-top: 0;
     margin-bottom: 0;

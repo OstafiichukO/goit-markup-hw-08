@@ -13,6 +13,13 @@
     // justify-content: space-between;
     // align-items: baseline;
   }
+  &-tablet {
+    @media screen and(min-width: 768px) {
+      @include centeredFlex(flex, space-around, baseline);
+    }
+    display: block;
+    margin-bottom: 60px;
+  }
   &__text {
     @include centeredFlex(flex, center, null);
     font-weight: bold;
@@ -27,7 +34,16 @@
   @include centeredFlex(flex, null, center);
   flex-direction: column;
   margin-bottom: 60px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
+// .footer-tablet {
+//   display: block;
+//   @media screen and (min-widht: 768px) {
+//     @include centeredFlex(flex, null, space-around);
+//   }
+// }
 .fAuth-logo {
   // display: inline-block;
   margin-bottom: 20px;
@@ -75,7 +91,6 @@
 .fSocials {
   @include centeredFlex(flex, center, center);
   flex-direction: column;
-  margin-bottom: 60px;
   // width: 206px;
   &-list {
     &__item {
@@ -117,7 +132,7 @@
 //   // flex-direction: column;
 // }
 .fMailing-form {
-  @include centeredFlex(block, center, center);
+  @include centeredFlex(flex, center, center);
   flex-direction: column;
   &__input {
     // margin-right: 12px;
@@ -132,6 +147,9 @@
     cursor: pointer;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and(min-width: 768px) {
+      max-width: 450px;
+    }
   }
   &__icon {
     margin-left: 10px;

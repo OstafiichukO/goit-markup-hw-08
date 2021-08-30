@@ -42,6 +42,9 @@
   }
 }
 .menu {
+  @media screen and(min-width: 768px) {
+    margin-right: 84px;
+  }
   // display: none;
   // margin-left: 93px;
 
@@ -59,7 +62,11 @@
     }
     &--current {
       color: var(--accent-color);
+      padding-top: 0;
+      margin-top: 16px;
       @media screen and(min-width: 768px) {
+        margin-top: 0;
+        padding: 32px 0;
         &::after {
           content: '';
           position: absolute;
@@ -79,11 +86,15 @@
 .menu-list {
   display: flex;
   flex-direction: column;
+  @media screen and(min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
   &__item {
     position: relative;
     @media screen and(min-width: 768px) {
       &:not(:first-child) {
-        margin-left: 40px;
+        margin-left: 50px;
       }
     }
   }
@@ -105,6 +116,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
 }
 .auth__contacts {
@@ -115,18 +127,22 @@
   padding: 16px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &--tel {
-    font-size: 32px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
+    @media screen and(max-width: 767px) {
+      font-size: 32px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: var(--accent-color);
+    }
     @media screen and(max-width: 358px) {
       font-size: 26px;
     }
   }
   &--mail {
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
+    @media screen and(max-width: 767px) {
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+    }
   }
   &:hover,
   &:focus {

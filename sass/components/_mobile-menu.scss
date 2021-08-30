@@ -11,7 +11,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 48px 40px;
+  justify-content: space-between;
+  padding: 32px 40px;
   background-color: #fff;
   // z-index: 999;
   transform: translateX(100%);

@@ -141,14 +141,20 @@
 }
 .agreement {
   margin-bottom: 30px;
+  @media screen and(min-width:1200px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   // padding: 4px 12px;
 
   font-size: 12px;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   @media screen and(min-width:1200px) {
+    @include centeredFlex(flex, center, center);
     font-size: 14px;
     line-height: 1.71;
+    width: 425px;
   }
   &-label {
     position: relative;
@@ -158,7 +164,7 @@
     // align-items: flex-end;
     cursor: pointer;
     @media screen and(min-width:1200px) {
-      @include centeredFlex(null, normal, center);
+      @include centeredFlex(flex, space-between, center);
     }
   }
   &-checkbox {
@@ -172,6 +178,9 @@
     }
     &:checked + .agreement-check {
       opacity: 1;
+    }
+    @media screen and(min-width:1200px) {
+      margin-right: 8.38px;
     }
   }
   &-check {
@@ -187,6 +196,7 @@
   }
   &-link {
     color: var(--accent-color);
+    margin-left: 3px;
   }
 }
 /* input:webkit-autofill,

@@ -128,7 +128,7 @@
   display: flex;
   justify-content: center;
 }
-@media screen and(min-width: 320px) {
+@media screen and(min-width: 320px) and(max-width:1199px) {
   .buttons-list {
     margin-top: 60px;
     margin-bottom: 40px;

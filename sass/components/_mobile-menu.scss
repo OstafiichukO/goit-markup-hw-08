@@ -28,6 +28,7 @@
 }
 .menu-container.is-open {
   transform: translateX(0);
+  z-index: 3;
 }
 .mobile-list {
   @include centeredFlex(flex, null, null);

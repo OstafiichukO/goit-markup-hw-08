@@ -446,7 +446,7 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 26px;
+    margin-bottom: 46px;
   }
 }
 
@@ -469,6 +469,7 @@ p {
 @media screen and (max-width: 428px) {
   .mobile-list__item {
     padding: 0;
+    border: none;
   }
 }
 

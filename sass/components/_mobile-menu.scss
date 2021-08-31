@@ -36,7 +36,7 @@
   margin-bottom: 16px;
   @media screen and (max-width: 428px) {
     @include centeredFlex(null, space-between, null);
-    margin-bottom: 26px;
+    margin-bottom: 46px;
   }
 
   &__item {
@@ -53,6 +53,7 @@
     }
     @media screen and (max-width: 428px) {
       padding: 0;
+      border: none;
     }
   }
 

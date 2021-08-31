@@ -16,25 +16,35 @@ p {
   padding: 0;
   margin: 0;
 }
-//
-// .work-list,
-// .team-list,
-//
-.team-list,
+.work-list {
+  @include centeredFlex(flex, space-between, null);
+}
+.team-list {
+  @include centeredFlex(flex, null, null);
+  flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    @include centeredFlex(flex, space-between, null);
+  }
+}
 .features-list {
   @include centeredFlex(flex, null, null);
   flex-wrap: wrap;
+  @media screen and(min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 .fSocials-list {
   @include centeredFlex(flex, space-between, null);
 }
 .social-list {
   @include centeredFlex(flex, center, null);
-  margin-bottom: 24px;
 }
 .client-list {
   @include centeredFlex(flex, null, null);
   flex-wrap: wrap;
+  @media screen and(min-width:1200px) {
+    @include centeredFlex(null, space-between, null);
+  }
 }
 .visually-hidden {
   position: absolute;
@@ -51,8 +61,10 @@ p {
 .title {
   margin-top: 60px;
   margin-bottom: 30px;
-  // margin-top: 0px;
-  // margin-bottom: 50px;
+  @media screen and(min-width:1200px) {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
 }
 .work-title,
 .team-title,

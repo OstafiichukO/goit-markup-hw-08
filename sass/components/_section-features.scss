@@ -1,20 +1,21 @@
 .features {
   &-list__item {
     margin-bottom: 30px;
-    @media screen and(min-width: 768px) {
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
       &:nth-child(2n + 1) {
         margin-right: 30px;
       }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: calc((100% - 1 * 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      margin: 0;
     }
 
     // width: 270px;
-    // @media screen (min-width: 1200px) {
-    //   width: 270px:
-    // }
   }
   &__icons {
     @include centeredFlex(flex, center, center);

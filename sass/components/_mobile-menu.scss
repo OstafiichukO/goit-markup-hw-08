@@ -34,6 +34,10 @@
   @include centeredFlex(flex, null, null);
   flex-wrap: wrap;
   margin-bottom: 16px;
+  @media screen and (max-width: 428px) {
+    @include centeredFlex(null, space-between, null);
+    margin-bottom: 26px;
+  }
 
   &__item {
     font-size: 18px;
@@ -46,6 +50,9 @@
     }
     &:last-child {
       border: none;
+    }
+    @media screen and (max-width: 428px) {
+      padding: 0;
     }
   }
 

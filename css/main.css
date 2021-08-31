@@ -441,15 +441,6 @@ p {
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 428px) {
-  .mobile-list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 46px;
-  }
-}
-
 .mobile-list__item {
   font-size: 18px;
   line-height: 1.2;
@@ -464,13 +455,6 @@ p {
 
 .mobile-list__item:last-child {
   border: none;
-}
-
-@media screen and (max-width: 428px) {
-  .mobile-list__item {
-    padding: 0;
-    border: none;
-  }
 }
 
 .mobile-list__link {

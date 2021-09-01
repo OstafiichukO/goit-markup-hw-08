@@ -1,6 +1,9 @@
 .features {
   &-list__item {
     margin-bottom: 30px;
+    @media screen and(max-width: 767px) {
+      width: 100%;
+    }
     @media screen and(min-width: 768px) and (max-width: 1199px) {
       &:nth-child(2n + 1) {
         margin-right: 30px;

@@ -5,6 +5,11 @@
     display: block;
   }
 }
+.work-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .work-overlay {
   position: relative;
   overflow: hidden;

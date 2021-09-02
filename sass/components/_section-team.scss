@@ -1,9 +1,9 @@
 .team {
   padding-top: 60px;
   background-color: var(--secondary-bgc);
-  @media screen and(min-width:1200px) {
-    padding-top: 0;
-  }
+  // @media screen and(min-width:1200px) {
+  //   padding-top: 0;
+  // }
   &-img {
     display: block;
     max-width: 100%;

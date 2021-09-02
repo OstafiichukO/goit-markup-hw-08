@@ -70,7 +70,7 @@
   overflow: hidden;
 }
 .projects-overlay {
-  display: block;
+  @include centeredFlex(flex, center, center);
   position: absolute;
   top: 0;
   left: 0;

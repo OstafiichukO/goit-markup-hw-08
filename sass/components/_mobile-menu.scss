@@ -25,6 +25,10 @@
     align-items: center;
     padding: 0;
   }
+  @media screen and(min-width:1200px) {
+    margin-left: 93px;
+    width: 100%;
+  }
 }
 .menu-container.is-open {
   transform: translateY(0);

@@ -154,36 +154,33 @@
 }
 .agreement {
   display: inline-block;
+  position: relative;
   margin-bottom: 30px;
   @media screen and(min-width:1200px) {
     margin-left: auto;
     margin-right: auto;
   }
-  // padding: 4px 12px;
-
   font-size: 12px;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   @media screen and(min-width:1200px) {
-    @include centeredFlex(flex, center, center);
     font-size: 14px;
     line-height: 1.71;
-    width: 425px;
+    // width: 425px;
   }
   &-label {
-    position: relative;
-    @include centeredFlex(flex, space-between, center);
-    // flex-wrap: wrap;
+    // position: relative;
+    display: inline-block;
     cursor: pointer;
-    @media screen and(min-width:1200px) {
-      @include centeredFlex(flex, space-between, center);
-    }
+    vertical-align: middle;
   }
   &-checkbox {
-    display: block;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
     width: 16px;
     height: 15px;
-    margin: 0 8px 0 0;
+    margin: 0 4px 0 0;
     padding: 0;
     &:checked {
       opacity: 0;
@@ -197,12 +194,20 @@
   }
   &-check {
     position: absolute;
-    top: 50%;
-    transform: translateY(-52%);
+    display: inline-block;
+    left: 0;
     width: 16px;
     height: 15px;
     opacity: 0;
+    @media screen and(min-width:1200px) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
+  // &-text {
+  //   display: inline-block;
+  //   vertical-align: text-bottom;
+  // }
   &-icon {
     fill: var(--accent-color);
   }

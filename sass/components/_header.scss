@@ -35,7 +35,8 @@
     color: var(--accent-color);
   }
   @media screen and(min-width: 768px) {
-    padding: 0;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   @media screen and(min-width: 1200px) {
     font-size: 26px;
@@ -148,8 +149,11 @@
   &--tel {
     @media screen and(max-width: 358px) {
       font-size: 26px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: var(--accent-color);
     }
-    @media screen and(max-width: 767px) {
+    @media screen and(min-width: 359px) and (max-width: 767px) {
       font-size: 32px;
       line-height: 1.17;
       letter-spacing: 0.02em;

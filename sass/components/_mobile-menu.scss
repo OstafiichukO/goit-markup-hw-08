@@ -56,10 +56,9 @@
     &:last-child {
       border: none;
     }
-    // @media screen and (max-width: 428px) {
-    //   padding: 0;
-    //   border: none;
-    // }
+    @media screen and (max-width: 450px) {
+      font-size: 10px;
+    }
   }
 
   &__link {
